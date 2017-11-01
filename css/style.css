@@ -1,16 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+/*=================
+Main Selectors
+==================*/
+
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #f7f8f9;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
   text-align: center;
 }
 
-img {
-  width: 300px;
+nav {
+  display: inline-block;
 }
 
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+li {
+  display: block;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: .5em;
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px 100px;
+}
+
+img {
+  width: 290px;
+}
+
+main {
+  margin: 0 10px;
+}
+
+footer {
+  padding: 20px 15px;
+}
+
+/*=================
+Element Selectors
+==================*/
+
 .profile-image {
+  display: block;
+  margin: 0 auto;
   width: 70%;
+}
+
+.container,
+.intro,
+.contact {
+  text-align: center;
+}
+
+.img {
+  display: block;
+  margin: 0 auto;
+}
+
+.section p {
+  font-size: .95em;
+}
+
+.contact {
+  background-color: #efefef;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid slategrey;
+}
+
+.contact h3 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  padding-bottom: 10px;
+}
+
+.contact p {
+  padding-bottom: 10px;
+}
+
+.footer {
+  float: left;
+  font-size: .9em;
+  padding-bottom: 10px;
+}
+
+.back-top {
+  float: right;
+  text-transform: uppercase;
+  font-size: .8em;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+/*========================
+Media Queiries Selectors
+=========================*/
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
 }
