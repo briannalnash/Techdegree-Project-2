@@ -8,12 +8,12 @@ Main Selectors
 
 body {
   font-family: 'Raleway', sans-serif;
-  background-color: #f7f8f9;
   font-size: 16px;
 }
 
 a {
   text-decoration: none;
+  color: #444;
 }
 
 header {
@@ -24,26 +24,47 @@ nav {
   display: inline-block;
 }
 
+h1,
+h2,
+h3 {
+  color: #444;
+}
+
 h1 {
   font-size: 2em;
 }
 
 h2 {
-  font-size: 1.4em;
+  color: #e5c242;
+  font-size: 1.2em;
+  font-weight: 400;
 }
 
 h3 {
-  font-size: 1.2em;
+  color: #65c1d8;
+  text-transform: uppercase;
+  font-size: .98em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+p {
+  font-weight: 300;
+  color: #888;
 }
 
 li {
   display: block;
   list-style: none;
   text-transform: uppercase;
-  font-size: .5em;
+  font-size: .45em;
   background-color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   padding: 10px 100px;
+}
+
+a:hover {
+  background-color: #e5c242;
 }
 
 img {
@@ -55,17 +76,33 @@ main {
 }
 
 footer {
-  padding: 20px 15px;
+  background-color: #f7f8f9;
+  padding: 20px 20px;
+  margin: 0;
 }
 
 /*=================
 Element Selectors
 ==================*/
 
+.head-banner{
+  background-color: #f7f8f9;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+.banner {
+  padding: 25px 15px;
+}
+
 .profile-image {
   display: block;
   margin: 0 auto;
   width: 70%;
+}
+
+.intro {
+  padding-top: 20px;
 }
 
 .container,
@@ -74,26 +111,44 @@ Element Selectors
   text-align: center;
 }
 
+.container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .img {
   display: block;
   margin: 0 auto;
+}
+
+.section {
+  padding-bottom: 20px;
 }
 
 .section p {
   font-size: .95em;
 }
 
+.text {
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.skills{
+  border-top: 1px solid #444;
+}
+
+.bottom-banner {
+  background-color: #f7f8f9;
+}
+
 .contact {
-  background-color: #efefef;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  border-bottom: 2px solid slategrey;
+  padding: 30px 10px;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 .contact h3 {
-  text-transform: uppercase;
-  font-size: 1.1em;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .contact p {
@@ -101,9 +156,10 @@ Element Selectors
 }
 
 .footer {
+  color: #444;
+  font-weight: bold;
   float: left;
   font-size: .9em;
-  padding-bottom: 10px;
 }
 
 .back-top {
@@ -111,7 +167,16 @@ Element Selectors
   text-transform: uppercase;
   font-size: .8em;
   font-weight: bold;
-  padding-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 /*========================
@@ -119,9 +184,105 @@ Media Queiries Selectors
 =========================*/
 
 @media (min-width: 768px) {
-
+  header {
+    padding-top: 20px;
+  }
+  li {
+    background-color: inherit;
+    display: flex;
+    float: left;
+    padding: 10px 20px;
+  }
+  .banner {
+    display: block;
+  }
+  .banner img {
+    height: 40%;
+    width: 40%;
+  }
+  .profile-image {
+    float: right;
+    padding-right: 20px;
+    width: 40%;
+  }
+  .intro {
+    float: left;
+    width: 60%;
+    text-align: left;
+    font-size: 1.2em;
+    padding: 0 20px;
+    margin-top: 0;
+  }
+  .container {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .portfolio-section {
+  margin: 0 auto;
+  }
+  .section {
+    float: left;
+    width: 50%;
+  }
+  .img {
+    width: 95%;
+  }
+  .text {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .contact {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .contact p {
+    font-size: 1.23em;
+  }
+  .footer {
+    padding-bottom: 40px;
+  }
+  .back-top {
+    display: none;
+  }
+  .hidden {
+    display: block;
+    float: right;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    font-weight: bold;
+  }
+  .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+  }
 }
 
 @media (min-width: 1024px) {
-
+  header {
+    padding: 30px 70px 15px;
+  }
+  nav {
+    float: right;
+  }
+  .name {
+    float: left;
+  }
+  .section {
+    width: 33%;
+  }
+  #skills {
+    width: 100%;
+  }
+  .skill {
+    width: 50%;
+  }
+  footer{
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .footer {
+    padding-bottom: 0px;
+  }
 }
