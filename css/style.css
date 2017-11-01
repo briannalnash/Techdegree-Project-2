@@ -12,8 +12,13 @@ body {
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
   color: #444;
+}
+
+a:hover {
+  background-color: #e5c242;
 }
 
 header {
@@ -21,7 +26,8 @@ header {
 }
 
 nav {
-  display: inline-block;
+  width: 80%;
+  margin: 0 auto;
 }
 
 h1,
@@ -63,7 +69,7 @@ li {
   padding: 10px 100px;
 }
 
-a:hover {
+li:hover {
   background-color: #e5c242;
 }
 
@@ -186,10 +192,16 @@ Media Queiries Selectors
 @media (min-width: 768px) {
   header {
     padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  nav {
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 0 auto;
   }
   li {
     background-color: inherit;
-    display: flex;
     float: left;
     padding: 10px 20px;
   }
@@ -233,7 +245,7 @@ Media Queiries Selectors
     margin: 0 auto;
   }
   .contact {
-    width: 75%;
+    width: 70%;
     margin: 0 auto;
   }
   .contact p {
