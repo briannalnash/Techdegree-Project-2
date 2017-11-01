@@ -1,7 +1,16 @@
 body {
   font-family: 'Raleway', sans-serif;
+  background-color: #f7f8f9;
+}
+
+header {
+  text-align: center;
 }
 
 img {
   width: 300px;
+}
+
+.profile-image {
+  width: 70%;
 }
