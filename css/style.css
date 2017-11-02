@@ -221,7 +221,7 @@ Media Queiries Selectors
   li {
     display: inline-block;
     background-color: inherit;
-    padding: 5px 20px;
+    padding: 0px 20px;
   }
   .banner {
     display: block;
@@ -274,6 +274,7 @@ Media Queiries Selectors
     font-size: 1.23em;
   }
   .footer {
+    padding-top: 10px;
     padding-bottom: 40px;
   }
   .back-top {
@@ -333,6 +334,7 @@ Media Queiries Selectors
     padding-right: 70px;
   }
   .footer {
+    padding-top: 5px;
     padding-bottom: 0px;
   }
   .hidden a {
