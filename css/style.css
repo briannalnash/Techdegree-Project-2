@@ -16,6 +16,8 @@ a {
   display: inline-block;
   text-decoration: none;
   color: #444;
+  width: 100%;
+  line-height: 3em;
 }
 
 a:hover {
@@ -70,7 +72,6 @@ li {
   font-weight: bold;
   background-color: #fff;
   margin-bottom: 5px;
-  padding: 10px 100px;
 }
 
 li:hover {
@@ -146,7 +147,7 @@ Element Selectors
 
 .top {
   background-color: slategrey;
-  padding: 10px 20px;
+  width: 20%;
   margin-bottom: 10px;
   color: white;
   font-weight: bold;
@@ -186,6 +187,10 @@ Element Selectors
   font-size: .8em;
   font-weight: bold;
 }
+.back-top a {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 .hidden {
   display: none;
@@ -212,7 +217,7 @@ Media Queiries Selectors
   li {
     display: inline-block;
     background-color: inherit;
-    padding: 10px 20px;
+    padding: 5px 20px;
   }
   .banner {
     display: block;
@@ -273,10 +278,8 @@ Media Queiries Selectors
     font-size: 1em;
     font-weight: bold;
   }
-  .hidden a {
+  .hidden li {
     float: left;
-    font-size: .9em;
-    padding: 10px;
   }
   .clearfix::after {
       content: "";
